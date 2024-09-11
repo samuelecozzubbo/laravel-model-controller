@@ -10,6 +10,8 @@
                 <a class="nav-link" href="{{ route('home') }}">Home</a>
                 <a class="nav-link" href="{{ route('about') }}">Chi siamo</a>
                 <a class="nav-link" href="{{ route('contacts') }}">Contatti</a>
+                <a class="nav-link" href="{{ route('movieList') }}">Lista film</a>
+
             </div>
         </div>
     </div>
