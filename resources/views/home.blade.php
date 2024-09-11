@@ -1,19 +1,14 @@
 {{-- questa view estende il file main.blade.php che è dentro la cartella view/layouts --}}
 @extends('layouts.main')
 
-@section('hero')
-    <div>HERO HOME</div>
-@endsection
-
 @section('content')
-<div class="container my-5">
-    <h1>{{ $title }}</h1>
-    <img src="{{ Vite::asset('resources/img/colibri.jpg') }}" alt="" class="img-fluid">
-    <p>
-        {{ $text }}
-    </p>
-</div>
-
+    <div class="container my-5 home">
+        <h1>{{ $title }}</h1>
+        <p>
+            {{ $text }}
+        </p>
+        <button class="btn btn-warning"><a href="" class="text-black text-decoration-none">Vai ai film</a></button>
+    </div>
 @endsection
 
 
