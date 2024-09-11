@@ -11,7 +11,7 @@
                 <a class="nav-link" href="{{ route('about') }}">Chi siamo</a>
                 <a class="nav-link" href="{{ route('contacts') }}">Contatti</a>
                 <a class="nav-link" href="{{ route('movieList') }}">Lista film</a>
-
+                <a class="nav-link" href="{{ route('oldMovieList') }}">Lista film vintage</a>
             </div>
         </div>
     </div>
