@@ -5,7 +5,7 @@
     <div class="container my-5">
         <h1>{{ $title }}</h1>
     </div>
-    <div class="container">
+    <div class="container movie-list">
         <div class="row">
             @foreach ($movies as $movie)
                 <div class="card bg-dark">
@@ -15,7 +15,7 @@
                         <p class="card-text">
                             {{ $movie->date }}
                         </p>
-                        <a href="#" class="btn btn-danger">Vai ai Dettagli</a>
+                        <a href={{ route('movieDetail', ['id' => $movie->id]) }} class="btn btn-danger">Vai ai Dettagli</a>
                     </div>
                 </div>
             @endforeach

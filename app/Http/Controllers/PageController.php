@@ -36,4 +36,10 @@ class PageController extends Controller
         $movies = Movie::where('date', '<', '1980-01-01')->orderBy('title')->get();
         return view('movieList', compact('title', 'movies'));
     }
+
+    public function movieDetail($id)
+    {
+        $movie = Movie::find($id);
+        return view('movieDetail', compact('movie'));
+    }
 }
