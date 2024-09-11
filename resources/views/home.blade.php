@@ -7,7 +7,8 @@
         <p>
             {{ $text }}
         </p>
-        <button class="btn btn-warning"><a href="" class="text-black text-decoration-none">Vai ai film</a></button>
+        <button class="btn btn-warning"><a href="{{ route('movieList') }}" class="text-black text-decoration-none">Vai ai
+                film</a></button>
     </div>
 @endsection
 

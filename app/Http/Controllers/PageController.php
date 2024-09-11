@@ -25,6 +25,8 @@ class PageController extends Controller
 
     public function movieList()
     {
-        return view('movieList');
+        $title = 'Lista film';
+        $movies = Movie::orderBy('title')->get();
+        return view('movieList', compact('title', 'movies'));
     }
 }
